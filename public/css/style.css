@@ -182,6 +182,33 @@ body {
 
 .btns{
     display:flex;
+    flex-wrap: wrap;
+    gap: 0.75rem;
+    justify-content: flex-start;
+}
+
+.btns .btn {
+    min-width: 120px;
+}
+
+@media (max-width: 767.98px) {
+    .btns .btn {
+        width: 100%;
+    }
+}
+
+.review-card {
+    border-radius: 1rem;
+    overflow: hidden;
+    border: 1px solid rgba(0, 0, 0, 0.08);
+}
+
+.review-card .card-body {
+    padding: 1.2rem;
+}
+
+.review-card .card-text {
+    margin-bottom: 0.75rem;
 }
 
 .show-card {
